@@ -9,9 +9,9 @@
 //to comply with SSID naming limitations.
 
 #include <Arduino.h>
-#include <ESP8266WiFi.h>
+#include <WiFi.h>
 #include <DNSServer.h>
-#include <ESP8266WebServer.h>
+#include <WebServer.h>
 
 String never_gonna[] = {
   "Were no strangers to love",
@@ -97,7 +97,7 @@ const int update_interval = 30000; // SSID update interval in ms
 const byte DNS_PORT = 53;
 IPAddress apIP(192, 168, 4, 1);
 DNSServer dnsServer;
-ESP8266WebServer webServer(80);
+WebServer webServer(80);
 
 String responseHTML = ""
                       "<!DOCTYPE html><html lang='en'><head>"
