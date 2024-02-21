@@ -1,4 +1,4 @@
-# WiFi RickRolling for ESP8266/ESP32
+# WiFi RickRolling for ESP32
 
 This tiny sketch starts a WiFi access point that changes its SSID every 30s.
 It does so cycling through the lyrics of "Never Gonna Give You Up" by Rick Astley.
